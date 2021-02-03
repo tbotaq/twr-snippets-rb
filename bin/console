@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'irb'
+Bundler.require
+Dotenv.load(File.join(__dir__, '../.env'))
+
+Dir.glob(File.join(__dir__, '../libs/**/*.rb')) { |f| require_relative f }
+
+IRB.start

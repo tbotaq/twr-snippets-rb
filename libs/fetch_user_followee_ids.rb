@@ -16,8 +16,8 @@ class FetchUserFolloweeIds
 
   def call(ids = [], cursor = FRIEND_API_INITIAL_CURSOR)
     followees   = user_rest_client.friend_ids(cursor: cursor)
-    ids        += followees.attrs[:ids]
-    next_cursor = followees.attrs[:next_cursor]
+    ids        += followees.attrs.fetch(:ids)
+    next_cursor = followees.attrs.fetch(:next_cursor)
     return ids if next_cursor == FRIEND_API_TERMINAL_CURSOR
 
     call(ids, next_cursor)

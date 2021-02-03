@@ -1,0 +1,20 @@
+name: Ruby
+on: push
+
+env:
+  TWITTER_CONSUMER_KEY: twitter_consumer_key
+  TWITTER_CONSUMER_SECRET_KEY: twitter_consumer_secret_key
+  TWITTER_ACCESS_TOKEN: twitter_access_token
+  TWITTER_ACCESS_TOKEN_SECRET: twitter_consumer_secret
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - name: Run RSpec
+      run: |
+        bundle exec rspec --format progress spec/

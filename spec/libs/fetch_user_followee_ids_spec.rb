@@ -21,8 +21,10 @@ describe FetchUserFolloweeIds do
     it 'calls #call method recursively' do
       subject
       expect(instance).to have_received(:call).with([], initial_cursor).once
-      expect(instance).to have_received(:call).with(first_response.attrs.fetch(:ids),
-                                                    first_response.attrs.fetch(:next_cursor)).once
+      expect(instance).to have_received(:call).with(
+        first_response.attrs.fetch(:ids),
+        first_response.attrs.fetch(:next_cursor)
+      ).once
       expect(instance).to have_received(:call).twice
     end
     it 'returns all the collected ids' do

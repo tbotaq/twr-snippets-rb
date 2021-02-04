@@ -13,6 +13,7 @@ group :development do
 end
 
 group :test do
+  gem 'codecov'
   gem 'rspec'
   gem 'webmock'
 end

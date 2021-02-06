@@ -21,6 +21,7 @@ describe FetchUserTweets do
         ).once
       end
       it "doesn't yield the given block" do
+        subject
         expect do |b|
           instance.call(collection, min_id: min_id, max_id: max_id, batch_size: batch_size, &b)
         end.not_to yield_control

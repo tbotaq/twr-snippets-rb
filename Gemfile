@@ -13,7 +13,7 @@ group :development do
 end
 
 group :test do
-  gem 'codecov'
+  gem 'simplecov-cobertura'
   gem 'rspec'
   gem 'webmock'
 end

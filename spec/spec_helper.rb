@@ -18,12 +18,9 @@ Dir[File.join(File.dirname(__FILE__), '../libs/**/*.rb')].sort.each { |f| requir
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require 'simplecov'
+require 'simplecov-cobertura'
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 SimpleCov.start
-if ENV['CI']
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

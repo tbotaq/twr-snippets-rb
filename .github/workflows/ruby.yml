@@ -16,6 +16,8 @@ jobs:
       with:
         ruby-version: head
         bundler-cache: true
+    - name: Ruby version
+      run: ruby -v
     - name: Run RSpec
       run: |
         bundle exec rspec --format progress spec/

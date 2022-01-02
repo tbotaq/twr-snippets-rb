@@ -102,13 +102,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv
-  rspec
-  rubocop
-  rubocop-rspec
-  simplecov-cobertura
-  twitter
-  webmock
+  dotenv (> 0)
+  rspec (> 0)
+  rubocop (> 0)
+  rubocop-rspec (> 0)
+  simplecov-cobertura (> 0)
+  twitter (> 0)
+  webmock (> 0)
 
 BUNDLED WITH
    2.2.22

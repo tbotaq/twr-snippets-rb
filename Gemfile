@@ -4,16 +4,16 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem 'dotenv', '> 0'
-gem 'twitter', '> 0'
+gem 'dotenv', '~> 2.7.6'
+gem 'twitter', '~> 7.0.0'
 
 group :development do
-  gem 'rubocop', '> 0'
-  gem 'rubocop-rspec', '> 0'
+  gem 'rubocop', '~> 1.22.0'
+  gem 'rubocop-rspec', '~> 2.5.0'
 end
 
 group :test do
-  gem 'simplecov-cobertura', '> 0'
-  gem 'rspec', '> 0'
-  gem 'webmock', '> 0'
+  gem 'simplecov-cobertura', '~> 1.4.2'
+  gem 'rspec', '~> 3.10.0'
+  gem 'webmock', '~> 3.14.0'
 end

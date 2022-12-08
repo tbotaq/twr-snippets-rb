@@ -8,7 +8,7 @@ gem 'dotenv', '~> 2.8.0'
 gem 'twitter', '~> 7.0.0'
 
 group :development do
-  gem 'rubocop', '~> 1.39.0'
+  gem 'rubocop', '~> 1.40.0'
   gem 'rubocop-rspec', '~> 2.15.0'
 end
 

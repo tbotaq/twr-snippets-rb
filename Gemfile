@@ -9,7 +9,7 @@ gem 'twitter', '~> 7.0.0'
 
 group :development do
   gem 'rubocop', '~> 1.54.0'
-  gem 'rubocop-rspec', '~> 2.22.0'
+  gem 'rubocop-rspec', '~> 2.23.0'
 end
 
 group :test do

@@ -15,5 +15,5 @@ end
 group :test do
   gem 'simplecov-cobertura', '~> 2.1.0'
   gem 'rspec', '~> 3.12.0'
-  gem 'webmock', '~> 3.18.0'
+  gem 'webmock', '~> 3.19.0'
 end
